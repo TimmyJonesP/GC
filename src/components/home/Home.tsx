@@ -19,14 +19,14 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="lg:pt-[205px]">
+    <div>
       <header className="home h-[736px] w-full bg-[#012237]">
         <img
           src="/home.png"
           alt="Home image"
           className="home h-full w-full max-h-max"
         />
-        <h1 className="text-golden lg:uppercase lg:px-96 px-5 text-[15px] font-bold absolute text-center bg-transparent top-[960px] w-full lg:text-[26px] lg:top-[700px]">
+        <h1 className="text-golden lg:uppercase px-5 text-[15px] font-bold absolute text-center bg-transparent top-[960px] w-full lg:text-[26px] lg:top-[700px]">
           Somos su socio estratégico en la gestión de seguros especializados y
           soluciones financieras
         </h1>
