@@ -26,25 +26,25 @@ const Home = () => {
           alt="Home image"
           className="home h-full w-full max-h-max"
         />
-        <h1 className="text-golden lg:uppercase px-5 text-[15px] font-bold absolute text-center bg-transparent top-[960px] w-full lg:text-[26px] lg:top-[700px]">
+        <h1 className="text-golden lg:uppercase px-5 text-[15px] font-bold absolute text-center bg-transparent top-[960px] w-full lg:text-[26px] lg:top-[700px] xl:px-96">
           Somos su socio estratégico en la gestión de seguros especializados y
           soluciones financieras
         </h1>
       </header>
       <section className="h-[632px] w-full">
-        <article className=" flex flex-col items-center justify-center h-full w-full">
+        <article className=" flex flex-col items-center justify-center h-full w-full xl:px-96">
           <p className="  uppercase font-light text-[19px] text-white leading-[0.7]">
             Descubrí
           </p>
           <h2 className="uppercase font-bold text-[31px] text-subtitle">
             Quienés somos
           </h2>
-          <h3 className="  text-golden text-[15px] font-normal text-center px-7 mx-6 pt-7 lg:px-96">
+          <h3 className="  text-golden text-[15px] font-normal text-center px-7 mx-6 pt-7">
             Somos un despacho boutique de consultoría y correduría de seguros y
             productos financieros que opera con una red nacional e internacional
             de socios estratégicos.
           </h3>
-          <h4 className="text-white font-light text-[12px] px-7 mx-5 pt-7 text-center lg:px-96">
+          <h4 className="text-white font-light text-[12px] px-7 mx-5 pt-7 text-center">
             Nuestra misión es ofrecer a nuestros clientes una amplia gama de
             productos y esquemas disponibles en el mercado financiero y de
             seguros especializados, brindándoles el asesoramiento necesario para
