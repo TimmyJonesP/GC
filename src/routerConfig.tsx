@@ -1,25 +1,32 @@
-import { Credit, Financiamiento, Home, Servicios } from "./pages";
+import React from "react";
 
 export interface RouteConfig {
   path: string;
-  element: JSX.Element;
+  element: React.LazyExoticComponent<React.ComponentType<object>>;
+  name?: string;
 }
 
 export const routes: RouteConfig[] = [
   {
     path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/financing",
-    element: <Financiamiento />,
+    element: React.lazy(() => import("./components/home/Home.tsx")),
+    name: "Home",
   },
   {
     path: "/services",
-    element: <Servicios />,
+    element: React.lazy(() => import("./pages/servicios/Servicios.tsx")),
+    name: "Servicios de crédito",
+  },
+  {
+    path: "/financing",
+    element: React.lazy(
+      () => import("./pages/financiamiento/Financiamiento.tsx")
+    ),
+    name: "Financiamiento",
   },
   {
     path: "/credit",
-    element: <Credit />,
+    element: React.lazy(() => import("./pages/credito/Credit.tsx")),
+    name: "Otros Servicios",
   },
 ];

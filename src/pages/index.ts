@@ -1,6 +1,6 @@
-import { Credit } from "../components/credito/Credit";
-import Financiamiento from "../components/financiamiento/Financiamiento";
-import { Home } from "../components/home/Home";
-import { Servicios } from "../components/servicios/Servicios";
+import Home from "../components/home/Home";
+import Credit from "./credito/Credit";
+import Financiamiento from "./financiamiento/Financiamiento";
+import Servicios from "./servicios/Servicios.tsx";
 
 export { Credit, Financiamiento, Home, Servicios };
