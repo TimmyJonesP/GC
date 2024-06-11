@@ -45,7 +45,7 @@ export const Footer = () => {
               onChange={handleChange}
               className="w-[90%] lg:w-full text-subtitle bg-[#012237] border-sky-950 border lg:py-1 py-2 px-2"
             />
-            <div className="w-[90%] lg:w-full flex flex-col lg:flex-row gap-3">
+            <div className="w-[90%] lg:w-full flex flex-col lg:flex-row gap-7">
               <input
                 type="tel"
                 name="telefono"
@@ -72,7 +72,7 @@ export const Footer = () => {
   gracias!"
               value={formData.mensaje}
               onChange={handleChange}
-              className="w-[90%] lg:w-full lg:h-[135px] h-[191px] text-subtitle bg-[#012237] lg:py-1 border-sky-950 border px-2"
+              className="w-[90%] lg:w-full lg:h-[135px] h-[191px] text-subtitle bg-[#012237] lg:pt-1 border-sky-950 border px-2 textarea-no-scrollbar"
             />
             <div className="lg:self-start justify-center">
               <button

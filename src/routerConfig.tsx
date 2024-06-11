@@ -3,30 +3,30 @@ import React from "react";
 export interface RouteConfig {
   path: string;
   element: React.LazyExoticComponent<React.ComponentType<object>>;
-  name?: string;
+  name: string;
 }
 
 export const routes: RouteConfig[] = [
   {
     path: "/",
     element: React.lazy(() => import("./components/home/Home.tsx")),
-    name: "Home",
+    name: "nav.home",
   },
   {
-    path: "/services",
-    element: React.lazy(() => import("./pages/servicios/Servicios.tsx")),
-    name: "Servicios de crédito",
+    path: "/credit",
+    element: React.lazy(() => import("./pages/credito/Credit.tsx")),
+    name: "nav.credit",
   },
   {
     path: "/financing",
     element: React.lazy(
       () => import("./pages/financiamiento/Financiamiento.tsx")
     ),
-    name: "Financiamiento",
+    name: "nav.finance",
   },
   {
-    path: "/credit",
-    element: React.lazy(() => import("./pages/credito/Credit.tsx")),
-    name: "Otros Servicios",
+    path: "/services",
+    element: React.lazy(() => import("./pages/servicios/Servicios.tsx")),
+    name: "nav.services",
   },
 ];

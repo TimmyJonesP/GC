@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    background-color: #011826;
+}
 .home {
     object-fit: cover;
     object-position: 28% 50%;
@@ -16,14 +19,12 @@
 .gradiente-gold {
     border-image: linear-gradient(to bottom, rgba(243, 213, 155, 1), rgba(171, 118, 60, 1)) 1;
 }
-
 .rombo {
     width: 9.38px;
     height: 9.38px;
     position: absolute;
     top: 0%;
-    left: 50%;
-    transform: translateY(-50%) rotate(-45deg);
+    transform: translateY(-50%)  rotate(-45deg);
     background: linear-gradient(to bottom, rgba(243, 213, 155, 1), rgba(171, 118, 60, 1));
 }
 
@@ -33,6 +34,18 @@
     background-size: cover;
     background-position: center
 }
-html {
-    background-color: #011826;
+.rotate {
+    transform: rotate(180deg);
 }
+
+.textarea-no-scrollbar {
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+  }
+  
+  .textarea-no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scroll {
+    overflow: hidden;
+  }

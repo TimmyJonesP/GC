@@ -1,70 +1,52 @@
-import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
 interface Elemento {
-  icono: string;
-  titulo: string;
-  descripcion: string;
+  icon: string;
+  title: string;
+  description: string;
   link: string;
 }
 
 const Home = () => {
-  const [elementos, setElementos] = useState<Elemento[]>([]);
-
-  useEffect(() => {
-    fetch("link.json")
-      .then((response) => response.json())
-      .then((data) => setElementos(data))
-      .catch((error) => console.error("error al cargar los elementos", error));
-  }, []);
+  const { t } = useTranslation();
+  const elementos: Elemento[] = t("solutions", { returnObjects: true });
 
   return (
-    <div>
+    <main>
       <header className="home h-[736px] w-full bg-[#012237]">
         <img
-          src="/home.png"
+          src="/home.webp"
           alt="Home image"
           className="home h-full w-full max-h-max"
         />
-        <h1 className="text-golden lg:uppercase px-5 text-[15px] font-bold absolute text-center bg-transparent top-[960px] w-full lg:text-[26px] lg:top-[700px] xl:px-96">
-          Somos su socio estratégico en la gestión de seguros especializados y
-          soluciones financieras
+        <h1 className="text-golden uppercase px-14 text-[17px] font-bold absolute text-center bg-transparent top-[880px] w-full lg:text-[26px] lg:top-[700px] xl:px-96">
+          {t("home.hero")}
         </h1>
       </header>
       <section className="h-[632px] w-full">
         <article className=" flex flex-col items-center justify-center h-full w-full xl:px-96">
-          <p className="  uppercase font-light text-[19px] text-white leading-[0.7]">
-            Descubrí
-          </p>
           <h2 className="uppercase font-bold text-[31px] text-subtitle">
-            Quienés somos
+            {t("home.about")}
           </h2>
           <h3 className="  text-golden text-[15px] font-normal text-center px-7 mx-6 pt-7">
-            Somos un despacho boutique de consultoría y correduría de seguros y
-            productos financieros que opera con una red nacional e internacional
-            de socios estratégicos.
+            {t("home.about_body")}
           </h3>
           <h4 className="text-white font-light text-[12px] px-7 mx-5 pt-7 text-center">
-            Nuestra misión es ofrecer a nuestros clientes una amplia gama de
-            productos y esquemas disponibles en el mercado financiero y de
-            seguros especializados, brindándoles el asesoramiento necesario para
-            que puedan seleccionar los productos que mejor se adapten a sus
-            necesidades.
+            {t("home.mission_body")}
           </h4>
         </article>
       </section>
       <section className="about-us flex flex-col items-center justify-center pb-[70px]">
         <article className="gradiente flex flex-col items-center justify-center h-full w-full">
           <p className="  uppercase font-light text-[19px] text-white leading-[0.7]">
-            conocé
+            {t("home.know")}
           </p>
           <h2 className="uppercase font-bold text-[31px] text-subtitle text-center leading-none pt-3">
-            Nuestras Soluciones
+            {t("home.solutions")}
           </h2>
           <h3 className="  text-golden text-[15px] font-normal text-center mx-6 pt-7">
-            En GA contamos con partners expertos y especializados en diferentes
-            nichos, lo que nos permite generar sinergias exclusivas y a la
-            medida de nuestros clientes.
+            {t("home.solutions_body")}
           </h3>
         </article>
         {elementos.map((element, index) => (
@@ -73,13 +55,13 @@ const Home = () => {
             className="flex flex-col items-center text-center justify-center h-full w-full"
           >
             <img src="divisor.svg" alt="Separador" className="py-6" />
-            <img src={element.icono} alt="" />
+            <img src={element.icon} alt="" />
             <h3 className=" font-bold text-[15px] text-golden py-5">
-              {element.titulo}
+              {element.title}
             </h3>
             <div className="w-[23px] h-[3px] bg-white mb-5"></div>
             <h4 className=" text-white text-[12px] font-light px-28 pb-5">
-              {element.descripcion}
+              {element.description}
             </h4>
             <Link
               to={element.link}
@@ -90,7 +72,7 @@ const Home = () => {
           </div>
         ))}
       </section>
-    </div>
+    </main>
   );
 };
 

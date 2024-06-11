@@ -1,0 +1,168 @@
+{
+  "nav": {
+    "home": "Home",
+    "credit": "Seguros de Crédito",
+    "finance": "Financiamiento",
+    "services": "Otros Servicios",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "footer": "Contáctanos",
+    "footer_body": "Déjanos tu consulta y te responderemos en la brevedad"
+  },
+  "home": {
+    "hero": "Somos su socio estratégico en la gestión de seguros especializados y soluciones financieras",
+    "about": "Quienes Somos",
+    "about_body": "Somos un despacho boutique de consultoría y correduría de seguros y productos financieros que opera con una red nacional e internacional de socios estratégicos.",
+    "mission_body": " Nuestra misión es ofrecer a nuestros clientes una amplia gama de productos y esquemas disponibles en el mercado financiero y de seguros especializados, brindándoles el asesoramiento necesario para que puedan seleccionar los productos que mejor se adapten a sus necesidades.",
+    "know": "conocé",
+    "solutions": "Nuestras Soluciones",
+    "solutions_body": "En GA contamos con partners expertos y especializados en diferentes nichos, lo que nos permite generar sinergias exclusivas y a la medida de nuestros clientes."
+  },
+  "solutions": [
+    {
+      "icon": "remp-icons.svg",
+      "title": "Seguros de Crédito",
+      "description": "Operamos con aseguradoras de primer nivel mundial y contamos con alianzas estratégicas que nos permiten emitir contratos locales en cada país donde nuestros clientes tengan presencia, logrando así brindarles un servicio global adaptado a su internacionalización.",
+      "link": "/credit"
+    },
+    {
+      "icon": "remp-icons.svg",
+      "title": "Financiamiento",
+      "description": "Trabajamos con Bancos y Fintechs líderes del mercado para ayudarlo en la obtención de financiamiento y permitirle acceder al capital de trabajo, asesorándolo para elegir aquellas herramientas que le permitirán que su negocio prospere.",
+      "link": "/financing"
+    },
+    {
+      "icon": "remp-icons.svg",
+      "title": "Otros Servicios",
+      "description": "Contamos con una red de partners que nos posibilita brindar soluciones adicionales como asesoría en fusiones/adquisiciones, reestructuración empresarial, levantamiento de fondos y desarrollo de estrategias corporativas, como así también la administración/colocación de inversiones.",
+      "link": "/services"
+    }
+  ],
+  "credit": {
+    "pre": "Nuestros",
+    "title": "Seguros de Crédito",
+    "sub": "Los Seguros de Crédito son instrumentos financieros cuya finalidad es <b>proteger a las compañías frente al riesgo de impago</b> de las cuentas por cobrar con sus clientes, ya sea en el mercado nacional como el internacional, y a causa de una insolvencia declarada (quiebra o concurso mercantil) o por una simple mora prolongada.",
+    "sub2": "En GA trabajamos en conjunto con las aseguradoras para garantizarles a nuestros clientes una gestión óptima de sus cuentas por cobrar, protegiéndolos para que no deban preocuparse por sus deudores, evitándoles procesos legales extensos con altos costos y asegurándoles que su flujo de caja y capital de trabajo jamás se verán afectados por un impago. Además, nuestra red de alianzas estratégicas nos permite tener acceso global en la emisión de contratos locales en cada país donde nuestros clientes tengan presencia, por lo que podemos brindarles un servicio global adaptado a su internacionalización.",
+    "ope": "¿Cómo operamos?",
+    "elements": [
+      {
+        "body": "Ante impagos por <b>mora prolongada</b> nos encargaremos de recuperar la deuda en representación de usted, y en caso de no poder hacerlo, se le indemnizará por el importe adeudado."
+      },
+      {
+        "body": "Mientras tanto, si se trata de una <b>insolvencia declarada</b>, como una quiebra o un concurso mercantil, recibirá la indemnización de su deuda en los 30 días siguientes a informar la misma. Luego, nosotros nos encargaremos junto con la aseguradora de seguir con el proceso de concurso o proceso judicial en representación de usted."
+      }
+    ],
+    "bene": [
+      {
+        "body": "Garantiza el pago de sus clientes y por ende el flujo de ingresos."
+      },
+      {
+        "body": "Mejora su gestión de cobranza y recuperación de cartera, disminuyendo sus días en cartera (DSO)."
+      },
+      {
+        "body": "Aumenta sus ventas al vender a crédito."
+      },
+      {
+        "body": "Mejora su rating financiero frente a proveedores y entidades financieras."
+      },
+      {
+        "body": "Mejora su flujo de efectivo al poder financiarse de sus proveedores."
+      },
+      {
+        "body": "Le permite conseguir financiamiento más barato al usar el contrato como colateral/aval financiero."
+      },
+      {
+        "body": "Disminuye sus imprevistos garantizando un flujo continuo de su capital de trabajo."
+      },
+      {
+        "body": "Disminuye su provisión de cuentas incobrables provocando un impacto positivo en sus resultados operativos (EBIT) y por ende en las utilidades netas."
+      },
+      {
+        "body": "Monitorea 24/7 el comportamientos de sus clientes y su situación financiera actual."
+      },
+      {
+        "body": "Garantiza una correcta asignación de las líneas de créditos con sus clientes."
+      },
+      {
+        "body": "Ayuda a elaborar con anterioridad una mejor estrategia comercial con sus clientes considerando su capacidad de pago."
+      },
+      {
+        "body": "Mejora la imagen institucional de la empresa."
+      }
+    ]
+  },
+  "white": "Dentro de los productos Seguros de Crédito y Protección de Cuentas por Cobrar operamos con aseguradoras de primer nivel mundial:",
+  "financing": {
+    "pre": "Nuestro",
+    "title": "Financiamiento",
+    "sub": "En GA entendemos que cada empresa enfrenta desafíos únicos en su gestión financiera. Es por eso que ofrecemos a cada cliente una gama de productos financieros diseñados para satisfacer las necesidades específicas de su negocio.",
+    "sub2": "Además, nos comprometemos a ser su socio estratégico en cada paso del camino, ayudándolo a tomar decisiones financieras informadas y proporcionándole las herramientas necesarias para que su negocio prospere.",
+    "ope": "Productos financieros disponibles",
+    "elements": [
+      {
+        "title": "Factoring de Clientes",
+        "subtitle": "(Domésticos y Exportación)",
+        "body": "Esta herramienta permite a una empresa convertir sus cuentas por cobrar en efectivo inmediato, lo cual no solo mejorará su flujo de caja, sino que también le permitirá reinvertir en su crecimiento sin esperar a que sus clientes paguen."
+      },
+      {
+        "title": "Factoring de proveedores",
+        "subtitle": "(Reverse Factoring)",
+        "body": "En estos casos, el comprador acuerda con una entidad financiera para que pague las facturas a sus proveedores antes del vencimiento, a menudo a una tasa más favorable debido a la calificación crediticia del comprador. Esto posibilita que los proveedores reciban pagos rápidos, al tiempo que le permiten al comprador mejorar las relaciones comerciales al asegurar pagos puntuales y potencialmente negociar mejores términos."
+      },
+      {
+        "title": "Factoring de Importación",
+        "body": "Este instrumento ayuda a las empresas que importan bienes y servicios a financiar sus compras. En estos casos, la entidad financiera paga a los proveedores extranjeros en nombre del importador, mejorando la capacidad de negociación del importador y generando un mayor flujo de caja sin inmovilizar capital. Gracias a esto, el importador puede utilizar sus recursos para otras necesidades operativas y también asegurar sus riesgo crediticio frente al proveedor."
+      },
+      {
+        "title": "Líneas de Crédito Revolventes",
+        "body": "Esta herramienta ofrece una flexibilidad inigualable para las empresas al poder obtener financiamiento al amparo de sus facturas y órdenes de compra. Permite que una compañía pueda acceder a los fondos según sus necesidades y pagar solo por lo que se utiliza, lo que las hace ideales para gestionar fluctuaciones en el flujo de efectivo o financiar proyectos inesperados."
+      }
+    ],
+    "title2": "Optimización Financiera Estratégica",
+    "sub3": "En GA entendemos que la eficiencia financiera es crucial para el éxito de cualquier negocio. Es por eso que ofrecemos nuestro servicio de ",
+    "span": "Optimización Financiera Estratégica",
+    "sub4": ", diseñado para analizar y optimizar sus productos financieros actuales, logrando ahorros significativos y mejorando su flujo de caja. Entre los principales beneficios de esta herramienta se incluyen:",
+    "opt": [
+      {
+        "title": "Optimización de Productos Financieros",
+        "body": "Implementamos estrategias para optimizar productos como líneas de crédito, colaterales financieros, préstamos y soluciones de factoraje, ajustándolos a sus necesidades específicas y maximizando sus beneficios."
+      },
+      {
+        "title": "Ahorro en Costos",
+        "body": "Al optimizar sus productos financieros reducimos los costos asociados, permitiéndole ahorrar dinero que puede reinvertir en su negocio."
+      },
+      {
+        "title": "Mejora del Flujo de Caja",
+        "body": "Mejoramos su flujo de caja al optimizar la gestión de sus cuentas por cobrar y por pagar así como otros aspectos financieros, asegurando que cuenta con mayor capital disponible para sus operaciones diarias y proyectos de crecimiento."
+      },
+      {
+        "title": "Mayor Capital de Trabajo",
+        "body": "Con un flujo de caja mejorado y menores costos financieros, su empresa tendrá más capital de trabajo disponible, facilitando la expansión y el aprovechamiento de nuevas oportunidades de negocio."
+      }
+    ],
+    "foot": "Todos estos servicios de Optimización Financiera Estratégica están diseñados para proporcionar una visión integral de sus finanzas, permitiéndole maximizar sus recursos y lograr un crecimiento sostenible, y en GA los llevamos a cabo trabajando con entidades financieras de primer nivel:"
+  },
+  "services": {
+    "title": "Contamos con una red de partners estratégicos que nos posibilita brindar soluciones adicionales para nuestros clientes. Algunas de ellas son:",
+    "elements": [
+      {
+        "body": "Asesoría en Fusiones y Adquisiciones (M&A)"
+      },
+      {
+        "body": "Reestructuración empresarial"
+      },
+      {
+        "body": "Levantamiento de fondos y desarrollo de estrategias corporativas"
+      },
+      {
+        "body": "Administración y colocación de inversiones"
+      }
+    ],
+    "sub": {
+      "p1": "En temas relacionados a <b>asesoría en fusiones y adquisiciones (M&A), reestructuración empresarial, levantamiento de fondos y desarrollo de estrategias corporativas</b> tenemos un partnership con",
+      "p2": "un despacho de banca privada líder en México con más de 20 años de experiencia y una red de expertos de alto calibre, especializados en consultoría estratégica en Banca de Inversión y Finanzas Corporativas."
+    },
+    "end": "En el segmento de <b>administración y colocación de inversiones<b/> operamos con diferentes fondos, traders y operadores de real estate lo cual nos permite ofrecer una variedad de oportunidades de inversión únicas a nuestros clientes."
+  }
+}

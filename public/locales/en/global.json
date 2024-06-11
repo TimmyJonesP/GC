@@ -1,0 +1,167 @@
+{
+  "nav": {
+    "home": "Home",
+    "credit": "Trade Credit Insurance",
+    "finance": "Financing",
+    "services": "Other Services",
+    "contact": "Contact Us"
+  },
+  "footer": {
+    "footer": "Contact us",
+    "footer_body": "If you have any questions or inquiries, please don&#39;t hesitate to contact us."
+  },
+  "home": {
+    "hero": "We are your strategic partner in the management of specialized insurance and financial solutions",
+    "about": "About Us",
+    "about_body": "We are a boutique insurance and financial products consulting and brokerage firm, that operates with a national and international network of strategic partners.",
+    "mission_body": "Our mission is to offer our clients a wide range of products and schemes available in the financial and specialized insurance market, providing them with the necessary advice to select the options that best suit their needs.",
+    "know": "Learn About",
+    "solutions": "Our Solutions",
+    "solutions_body": "At GA we have expert and specialized partners in different niches, which allows us to generate exclusive synergies tailored to our clients."
+  },
+  "solutions": [
+    {
+      "icon": "remp-icons.svg",
+      "title": "Trade Credit Insurance",
+      "description": "We operate with world-class insurance companies. We also have strategic alliances that allow us to issue local contracts in each country where our clients have a presence, thus providing them with a global service adapted to their internationalization.",
+      "link": "/credit"
+    },
+    {
+      "icon": "remp-icons.svg",
+      "title": "Financing",
+      "description": "We work with market-leading Banks and Fintechs to help you obtain financing and allow",
+      "link": "/financing"
+    },
+    {
+      "icon": "remp-icons.svg",
+      "title": "Other Services",
+      "description": "We have a network of partners that enables us to provide additional solutions such as mergers/acquisitions advisory, corporate restructuring, fundraising and corporate strategy development, as well as investment management/placement.",
+      "link": "/services"
+    }
+  ],
+  "credit": {
+    "pre": "Our",
+    "title": "Trade Credit Insurance",
+    "sub": "Trade Credit Insurance is a financial instrument whose purpose is to <b>protect companies against the risk of non-payment</b> of accounts receivable from their customers, both in the domestic and in the international market, and whether due to declared insolvency (bankruptcy or insolvency proceedings) or simply prolonged delay.",
+    "sub2": "At GA, we work together with insurers to guarantee optimal management of our client’s accounts receivable. We ensure them that they do not have to worry about their debtors, avoiding extensive legal proceedings with high costs, and assuring them that their cash flow and working capital will never be affected by a default.In addition, our network of strategic alliances allows us to have global access to the issuance of local contracts in each country where our clients have a presence, so we can provide them with a global service adapted to their internationalization.",
+    "ope": "How do we operate?",
+    "elements": [
+      {
+        "body": "In the event of non-payment due to prolonged delay, we will take care of recovering the debt on your behalf, and if we are unable to do so, you will be compensated for the amount owed."
+      },
+      {
+        "body": "Meanwhile, in the event of declared insolvency, such as bankruptcy or commercial bankruptcy, you will receive compensation for your debt within 30 days of reporting it. Then, we will be in charge, together with the insurer, of continuing with the bankruptcy process or judicial process on your behalf."
+      }
+    ],
+    "bene": [
+      {
+        "body": "It guarantees the payment of your clients and therefore the flow of income."
+      },
+      {
+        "body": "Improves your collection and portfolio recovery management, reducing your days in portfolio."
+      },
+      {
+        "body": "Increase your sales by selling on credit."
+      },
+      {
+        "body": "Improves your financial rating with suppliers and financial entities."
+      },
+      {
+        "body": "Improve your cash flow by being able to finance yourself from your suppliers."
+      },
+      {
+        "body": "Allows you to get cheaper financing by using the contract as collateral/financial guarantee."
+      },
+      {
+        "body": "Reduces your unforeseen events by guaranteeing a continuous flow of your working capital."
+      },
+      {
+        "body": "Reduces its provision for bad debts, causing a positive impact on its operating results and therefore on net profits."
+      },
+      {
+        "body": "Monitor 24/7 the behavior of your clients and their current financial situation."
+      },
+      {
+        "body": "Guarantees correct allocation of credit lines with your clients."
+      },
+      {
+        "body": "Helps you develop a better commercial strategy with your clients in advance, considering their payment capacity."
+      },
+      {
+        "body": "Improves the institutional image of the company."
+      }
+    ]
+  },
+  "white": "Within the Trade Credit Insurance and Accounts Receivable Protection products, we operate with world-class insurers:",
+  "financing": {
+    "pre": "Our",
+    "title": "Financing",
+    "sub": "At GA, we understand that every company faces unique financial management challenges. That's why we offer each client a range of financial products designed to meet the specific needs of your business.",
+    "sub2": "In addition, we are committed to being your strategic partner every step of the way, helping you make informed financial decisions and providing you with the tools you need to help your business thrive.",
+    "ope": "Financial products available",
+    "elements": [
+      {
+        "title": "Customer Factoring",
+        "subtitle": "(Domestic and Export)",
+        "body": "This tool allows a company to convert its accounts receivable into immediate cash, which will not only improve its cash flow but also allow it to reinvest in its growth without waiting for its customers to pay."
+      },
+      {
+        "title": "Reverse factoring",
+        "body": "In these cases, the buyer arranges with a financial institution to pay invoices to its suppliers before they are due. This arrangement is often at a more favorable rate due to the buyer's credit rating. It enables suppliers to receive prompt payment while allowing the buyer to improve business relationships by securing timely payments and potentially negotiating better terms."
+      },
+      {
+        "title": "Import factoring",
+        "body": "This instrument helps companies that import goods and services to finance their purchases. In these cases, the financial entity pays foreign suppliers on behalf of the importer, improving the importer&#39;s negotiating capacity and generating greater cash flow without tying up capital. As a result, the importer can use its resources for other operational needs and can also insure its credit risk vis-à-vis the supplier."
+      },
+      {
+        "title": "Revolving Lines of Credit",
+        "body": "This tool offers unparalleled flexibility for companies to obtain financing under the cover of their invoices and purchase orders. It allows a company to access funds as needed and pay only for what is used, making it ideal for managing cash flow fluctuations or financing unexpected projects."
+      }
+    ],
+    "title2": "Strategic Financial Optimization",
+    "sub3": "At GA, we also understand that financial efficiency is crucial to the success of any business. That is why we offer our ",
+    "span": "“Strategic Financial Optimization”",
+    "sub4": " service, designed to analyze and optimize your current financial products, achieving significant savings and improving your cash flow. The main benefits of this tool include:",
+    "opt": [
+      {
+        "title": "Financial Product Optimization",
+        "body": "We implement strategies to optimize products such as lines of credit, financial collateral, loans, and factoring solutions, adjusting them to your specific needs and maximizing your benefits."
+      },
+      {
+        "title": "Cost Savings",
+        "body": "By optimizing your financial products we reduce the associated costs, allowing you to save money that you can reinvest in your business."
+      },
+      {
+        "title": "Cash Flow Improvement",
+        "body": "We improve your cash flow by optimizing the management of your accounts receivable and payable as well as other financial aspects, ensuring that you have more capital available for your daily operations and growth projects."
+      },
+      {
+        "title": "Increased Working Capital",
+        "body": "With improved cash flow and lower financial costs, your company will have more working capital available, making it easier to expand and take advantage of new business opportunities."
+      }
+    ],
+    "foot": "These Strategic Financial Optimization services are designed to provide a comprehensive view of your finances, allowing you to maximize your resources and achieve sustainable growth. At GA, we carry them out by working with top-tier financial institutions:"
+  },
+  "services": {
+    "title": "We have a network of strategic partners that enables us to provide additional solutions for our customers. Some of them are:",
+    "elements": [
+      {
+        "body": "Advice on Mergers and Acquisitions (M&A)"
+      },
+      {
+        "body": "Corporate restructuring"
+      },
+      {
+        "body": "Fundraising and development of corporate strategies."
+      },
+      {
+        "body": "Investment management and placement"
+      }
+    ],
+    "sub": {
+      "p1": "In matters related to <b>mergers and acquisitions (M&amp;A) advisory, corporate restructuring, fundraising, and corporate strategy development</b> we have a partnership with ",
+      "p2": "a leading private banking firm in Mexico with more than 20 years of experience and a network of high-caliber experts, specialized in strategic consulting in Investment Banking and Corporate Finance."
+    },
+    "end": "In the <b>investment management and placement<b/> segment we operate with different funds, traders, and real estate operators which allows us to offer a variety of unique investment opportunities to our clients."
+  }
+}
