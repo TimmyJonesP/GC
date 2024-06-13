@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { routes } from "../../routerConfig";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
@@ -9,9 +9,28 @@ export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [initialTop, setInitialTop] = useState<number | null>(null);
-
+  const { t } = useTranslation();
+  const location = useLocation();
+  const navigate = useNavigate();
   const navbarRef = useRef<HTMLDivElement>(null);
 
+  const scrollToFooter = () => {
+    const footer = document.getElementById("footer");
+    if (footer) {
+      footer.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  const handleScrollToAbout = () => {
+    navigate("/");
+    setTimeout(() => {
+      const aboutElement = document.getElementById("aboutus");
+      if (aboutElement) {
+        aboutElement.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.log("aboutus element not found");
+      }
+    }, 100);
+  };
   useEffect(() => {
     const handleScroll = () => {
       if (navbarRef.current) {
@@ -36,8 +55,6 @@ export const NavBar = () => {
     };
   }, [initialTop]);
 
-  const location = useLocation();
-  const { t } = useTranslation();
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
   };
@@ -48,6 +65,16 @@ export const NavBar = () => {
   const handleLinkClick = () => {
     setIsMenuOpen(false);
   };
+
+  useEffect(() => {
+    if (location.hash === "#aboutus") {
+      const aboutElement = document.getElementById("aboutus");
+      if (aboutElement) {
+        aboutElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location.hash]);
+
   useEffect(() => {
     if (isMenuOpen) {
       document.body.classList.add("no-scroll");
@@ -97,32 +124,49 @@ export const NavBar = () => {
           </div>
         </div>
         <ul
-          className={`lg:flex flex-row items-center justify-center gap-x-10 text-subtitle text-xl font-light ${
+          className={`lg:flex flex-row items-center justify-center gap-x-10 text-subtitle text-[12px] xl:text-[16px] font-light ${
             isMenuOpen
               ? "h-full flex-col text-[23px] w-full py-[60px] items-center"
               : "hidden"
           }`}
         >
-          {routes.map((route) => (
-            <li
-              key={route.path}
-              className={`${
-                isMenuOpen ? "py-[30px] px-[60px] justify-center" : ""
-              }`}
-            >
-              <Link
-                to={route.path}
-                className={`lg:hover:text-golden ${
-                  location.pathname === route.path
-                    ? " font-bold text-golden"
-                    : ""
-                }
-                ${isMenuOpen ? "" : ""} xl:ml-3`}
-                onClick={handleLinkClick}
+          {routes.map((route, index) => (
+            <>
+              <li
+                key={route.path}
+                className={`${
+                  isMenuOpen ? "py-[30px] px-[60px] justify-center" : ""
+                }`}
               >
-                {t(route.name)}
-              </Link>
-            </li>
+                <Link
+                  to={route.path}
+                  className={`lg:hover:text-golden ${
+                    location.pathname === route.path
+                      ? " font-bold text-golden"
+                      : ""
+                  }
+                  ${isMenuOpen ? "" : ""} xl:ml-3`}
+                  onClick={handleLinkClick}
+                >
+                  {t(route.name)}
+                </Link>
+              </li>
+              {index === 0 && (
+                <li
+                  className={`${
+                    isMenuOpen ? "py-[30px] px-[60px] justify-center" : ""
+                  }`}
+                >
+                  <button
+                    onClick={handleScrollToAbout}
+                    className={`lg:hover:text-golden
+                    ${isMenuOpen ? "" : ""} xl:ml-3`}
+                  >
+                    {t("nav.about")}
+                  </button>
+                </li>
+              )}
+            </>
           ))}
           <div className=" lg:hidden px-[50px] py-[30px]">
             <button onClick={() => changeLanguage("en")}>
@@ -133,7 +177,7 @@ export const NavBar = () => {
             </button>
           </div>
         </ul>
-        <div className="hidden lg:block absolute right-[130px] xl:right-[260px]">
+        <div className="hidden lg:block absolute right-[140px] xl:right-[240px] top-[30px]">
           <button onClick={() => changeLanguage("en")}>
             <img src="en-btn.png" className="px-4" alt="english" />
           </button>
@@ -142,7 +186,10 @@ export const NavBar = () => {
           </button>
         </div>
         <div className="hidden lg:block">
-          <button className="text-golden gradiente-gold bg-transparent xl:ml-[125px] text-[14px] font-semibold border-2 text-center border-golden px-6 justify-center py-1 drop-shadow-sm shadow-white">
+          <button
+            onClick={scrollToFooter}
+            className="text-golden gradiente-gold bg-transparent xl:ml-[125px] text-[14px] font-semibold border-2 text-center border-golden px-6 justify-center py-1 drop-shadow-sm shadow-white"
+          >
             {t("nav.contact")}
           </button>
         </div>

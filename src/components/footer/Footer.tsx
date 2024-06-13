@@ -30,6 +30,7 @@ export const Footer = () => {
     <footer
       className="h-[880px] lg:h-[514px] w-full bg-ultrablue flex flex-col justify-center items-center text-center relative lg:justify-evenly max-w-screen-xl m-auto"
       ref={footerRef}
+      id="footer"
     >
       <div className="rombo" />
       <h2 className="text-subtitle text-[31px] font-bold uppercase">

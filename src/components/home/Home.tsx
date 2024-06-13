@@ -41,7 +41,10 @@ const Home = () => {
           className="hidden lg:block absolute top-[-100px] w-[444px] h-[800px] right-[-175px] transform scale-x-[-1] "
           alt=""
         />
-        <article className=" flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto">
+        <article
+          className=" flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto"
+          id="aboutus"
+        >
           <h2 className="uppercase font-bold text-[31px] text-subtitle">
             {t("home.about")}
           </h2>

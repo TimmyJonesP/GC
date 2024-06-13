@@ -4,6 +4,7 @@
 
 html {
     background-color: #011826;
+    scroll-behavior: smooth;
 }
 .home {
     object-fit: cover;
