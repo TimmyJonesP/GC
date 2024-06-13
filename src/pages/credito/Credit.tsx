@@ -60,7 +60,7 @@ const Credit = () => {
             {benefits.map((benefit, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center align-center h-[100px] w-[215px] m-7 lg:m-0"
+                className="flex flex-col items-center align-center h-[100px] w-[215px] m-3 lg:m-0"
               >
                 <img src="golden.svg" alt="" className="mb-4" />
                 <p className="text-center text-[12px] font-light text-white px-4">
