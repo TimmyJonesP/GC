@@ -67,11 +67,11 @@ export const NavBar = () => {
 
   return (
     <nav
-      className={`w-full z-50 h-[420px] lg:h-[205px] bg-[#012237] items-center justify-center flex flex-col lg:flex-row lg:justify-between`}
+      className={`w-full z-50 h-[200px] bg-[#012237] items-center justify-center flex flex-col lg:flex-row lg:justify-between`}
     >
       <div
-        className={`w-full flex flex-row items-center justify-between px-6 lg:flex-row bg-[#012237] xl:px-24 py-5 z-50 ${
-          isScrolled || isMenuOpen ? "fixed top-0" : ""
+        className={`w-full flex flex-row items-center justify-between px-6 lg:flex-row bg-[#012237] xl:px-24 py-3 z-50 ${
+          isScrolled || isMenuOpen ? "fixed top-0" : "block"
         } ${isMenuOpen ? "h-screen flex-col" : ""}`}
       >
         <div
@@ -133,7 +133,7 @@ export const NavBar = () => {
             </button>
           </div>
         </ul>
-        <div className="hidden lg:block absolute right-[140px] xl:right-[260px]">
+        <div className="hidden lg:block absolute right-[130px] xl:right-[260px]">
           <button onClick={() => changeLanguage("en")}>
             <img src="en-btn.png" className="px-4" alt="english" />
           </button>

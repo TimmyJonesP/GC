@@ -14,13 +14,18 @@ const Home = () => {
 
   return (
     <main className="overflow-hidden">
-      <header className="home h-[736px] w-full bg-[#012237] relative flex items-center justify-center">
+      <header className="home h-full w-full bg-[#012237] relative flex items-center justify-center">
         <img
-          src="/image-home.webp"
+          src="/desktop-h.png"
           alt="Home image"
-          className="home h-full w-full max-h-max"
+          className="home h-full w-full max-h-max hidden md:block"
         />
-        <h1 className="text-golden uppercase absolute px-14 text-[17px] font-bold text-center top-[550px] lg:text-[26px] mx-auto max-w-screen-lg">
+        <img
+          src="/mobile-h.png"
+          alt="Home image"
+          className="home-mobil object-cover h-full w-full max-w-max md:hidden"
+        />
+        <h1 className="text-golden uppercase absolute px-14 text-[17px] z-10 font-bold text-center  bottom-[-75px] md:bottom-0 lg:text-[26px] mx-auto max-w-screen-lg">
           {t("home.hero")}
         </h1>
         <div className="gradiente w-full absolute bottom-0 md:bottom-0 h-[100px] rotate-180" />
