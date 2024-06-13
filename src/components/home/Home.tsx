@@ -48,7 +48,7 @@ const Home = () => {
           </h4>
         </article>
       </section>
-      <section className="aboutus flex flex-col items-center justify-center pb-[80px] w-full h-full">
+      <section className="aboutus flex flex-col items-center justify-center pb-[80px] w-full bg-gradiente bg-cover bg-center bg-no-repeat">
         <article className="flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto">
           <h2 className="uppercase font-bold text-[31px] text-subtitle text-center leading-none pt-3">
             {t("home.solutions")}
@@ -66,7 +66,7 @@ const Home = () => {
               <img
                 src="divisor.svg"
                 alt="Separador"
-                className="py-6 lg:hidden"
+                className="py-6 lg:hidden my-8"
               />
               <img
                 src={element.icon}
@@ -76,8 +76,8 @@ const Home = () => {
               <h3 className=" font-bold text-[15px] justify-start text-golden m-auto">
                 {element.title}
               </h3>
-              <div className="w-[23px] h-[3px] bg-white my-5" />
-              <h4 className=" text-white text-[12px] font-light m-auto justify-start lg:w-[325px]">
+              <div className="w-[23px] h-[3px] bg-white my-7" />
+              <h4 className=" text-white text-[12px] font-light m-auto justify-start lg:w-[325px] lg:h-[100px] h-[150px]">
                 {element.description}
               </h4>
               <Link
