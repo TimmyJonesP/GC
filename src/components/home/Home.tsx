@@ -48,8 +48,12 @@ const Home = () => {
           </h4>
         </article>
       </section>
-      <section className="aboutus flex flex-col items-center justify-center pb-[80px] w-full bg-gradiente bg-cover bg-center bg-no-repeat">
-        <article className="flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto">
+      <section
+        className="flex flex-col items-center justify-center pb-[80px] w-full bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url('img-back-soluciones.png')" }}
+      >
+        <div className="gradiente w-full absolute top-0 h-[100px]"></div>
+        <article className="flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto z-10">
           <h2 className="uppercase font-bold text-[31px] text-subtitle text-center leading-none pt-3">
             {t("home.solutions")}
           </h2>
