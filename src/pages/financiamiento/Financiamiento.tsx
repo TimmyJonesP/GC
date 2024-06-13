@@ -39,7 +39,7 @@ const Financiamiento = () => {
           {elements.map((element, index) => (
             <div
               key={index}
-              className="flex flex-col text-start items-center align-center justify-center m-7 w-[300px] lg:w-[225px]"
+              className="flex flex-col text-start items-center align-center justify-center m-3 w-[300px] lg:w-[225px]"
             >
               <img src="golden.svg" alt="" className="mb-4" />
               <div className=" h-[48px]">
@@ -65,7 +65,7 @@ const Financiamiento = () => {
           <h2 className="uppercase text-subtitle font-bold text-[20px] text-center">
             {t("financing.title2")}
           </h2>
-          <p className="text-golden text-[12px] font-regular text-center px-7 mx-6 pt-7">
+          <p className="text-golden text-[12px] font-regular text-center px-4 mx-6 pt-7">
             {t("financing.sub3")}
             <span className=" font-semibold">{t("financing.span")}</span>
             {t("financing.sub4")}
@@ -74,7 +74,7 @@ const Financiamiento = () => {
             {opt.map((element, index) => (
               <div
                 key={index}
-                className="flex flex-col items-center align-center justify-center m-7 w-[300px] lg:w-[225px]"
+                className="flex flex-col items-center align-center justify-center m-3 w-[300px] lg:w-[225px]"
               >
                 <img src="golden.svg" alt="" className="mb-4" />
                 <div className="h-[48px]">
