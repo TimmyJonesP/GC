@@ -107,7 +107,7 @@ export const NavBar = () => {
             <li
               key={route.path}
               className={`${
-                isMenuOpen ? "py-[45px] px-[60px] justify-center" : ""
+                isMenuOpen ? "py-[30px] px-[60px] justify-center" : ""
               }`}
             >
               <Link
@@ -124,7 +124,7 @@ export const NavBar = () => {
               </Link>
             </li>
           ))}
-          <div className=" lg:hidden px-[50px] pt-[55px]">
+          <div className=" lg:hidden px-[50px] py-[30px]">
             <button onClick={() => changeLanguage("en")}>
               <img src="en-btn.png" className="px-4" alt="" />
             </button>
