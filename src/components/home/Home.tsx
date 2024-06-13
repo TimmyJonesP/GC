@@ -23,7 +23,7 @@ const Home = () => {
         <h1 className="text-golden uppercase absolute px-14 text-[17px] font-bold text-center top-[550px] lg:text-[26px] mx-auto max-w-screen-lg">
           {t("home.hero")}
         </h1>
-        <div className="gradiente w-full absolute bottom-0 h-[100px] rotate-180" />
+        <div className="gradiente w-full absolute bottom-[25px] md:bottom-0 h-[100px] rotate-180" />
       </header>
       <section className="h-[632px] w-full relative">
         <img
