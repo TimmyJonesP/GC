@@ -31,7 +31,7 @@ html {
 .aboutus {
     background-image: 
       linear-gradient(to bottom, rgba(1, 24, 38, 1) 0%, rgba(1, 34, 55, 0) 100px),
-      url("img-back-soluciones.png");
+      url("/public/HOME.webp");
     background-repeat: no-repeat;
     background-size: cover; 
     background-position: center center;
