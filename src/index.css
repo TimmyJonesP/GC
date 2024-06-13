@@ -7,13 +7,12 @@ html {
 }
 .home {
     object-fit: cover;
-    object-position: 28% 50%;
+    object-position: 60% 0%;
 }
 
 .gradiente {
     background: -webkit-linear-gradient(top, rgba(1, 24, 38, 1) 0%, rgba(1, 34, 55, 0) 100%);
     background: linear-gradient(to bottom, rgba(1, 24, 38, 1) 0%, rgba(1, 34, 55, 0) 100%);
-    height: 100%;
 }
 
 .gradiente-gold {
@@ -24,16 +23,20 @@ html {
     height: 9.38px;
     position: absolute;
     top: 0%;
-    transform: translateY(-50%)  rotate(-45deg);
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%)  rotate(-45deg);
     background: linear-gradient(to bottom, rgba(243, 213, 155, 1), rgba(171, 118, 60, 1));
 }
 
 .about-us {
-    background-image: url("mobile-bg.svg");
+    background-image: 
+      linear-gradient(to bottom, rgba(1, 24, 38, 1) 0%, rgba(1, 34, 55, 0) 100px),
+      url("img-back-soluciones.png");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center
-}
+    background-size: cover; 
+    background-position: center center;
+    min-height: 700px;
+  }
 .rotate {
     transform: rotate(180deg);
 }
@@ -42,7 +45,6 @@ html {
     scrollbar-width: none; 
     -ms-overflow-style: none; 
   }
-  
   .textarea-no-scrollbar::-webkit-scrollbar {
     display: none;
   }

@@ -1,4 +1,5 @@
-import { useState, ChangeEvent, FormEvent } from "react";
+import { useState, ChangeEvent, FormEvent, useRef } from "react";
+import { useTranslation } from "react-i18next";
 export const Footer = () => {
   const [formData, setFormData] = useState({
     nombre: "",
@@ -16,20 +17,26 @@ export const Footer = () => {
       [name]: value,
     });
   };
+  const footerRef = useRef(null);
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
     console.log(formData);
   };
 
+  const { t } = useTranslation();
+
   return (
-    <footer className="h-[880px] lg:h-[514px] w-full bg-ultrablue flex flex-col justify-center items-center text-center relative lg:justify-evenly">
+    <footer
+      className="h-[880px] lg:h-[514px] w-full bg-ultrablue flex flex-col justify-center items-center text-center relative lg:justify-evenly max-w-screen-xl m-auto"
+      ref={footerRef}
+    >
       <div className="rombo" />
       <h2 className="text-subtitle text-[31px] font-bold uppercase">
-        Contactanos
+        {t("footer.footer")}
       </h2>
       <h3 className=" text-golden text-[15px] font-bold px-16 py-9 lg:hidden">
-        Dejá tu consulta, te responderemos a la brevedad
+        {t("footer.footer_body")}
       </h3>
       <section className="w-full flex flex-col lg:flex-row lg:justify-between px-10 lg:px-20">
         <article className="lg:order-2 lg:w-1/2 flex justify-center lg:mt-0 l">
@@ -40,7 +47,7 @@ export const Footer = () => {
             <input
               type="text"
               name="nombre"
-              placeholder="nombre"
+              placeholder={t("form.name")}
               value={formData.nombre}
               onChange={handleChange}
               className="w-[90%] lg:w-full text-subtitle bg-[#012237] border-sky-950 border lg:py-1 py-2 px-2"
@@ -49,7 +56,7 @@ export const Footer = () => {
               <input
                 type="tel"
                 name="telefono"
-                placeholder="número telefónico"
+                placeholder={t("form.tel")}
                 value={formData.telefono}
                 onChange={handleChange}
                 className="lg:w-1/2 w-full text-subtitle bg-[#012237] border-sky-950 border lg:py-1 py-2 px-2"
@@ -57,7 +64,7 @@ export const Footer = () => {
               <input
                 type="email"
                 name="email"
-                placeholder="e-mail"
+                placeholder={t("form.email")}
                 value={formData.email}
                 onChange={handleChange}
                 className="lg:w-1/2 w-full text-subtitle bg-[#012237] border-sky-950 border lg:py-1 py-2 px-2"
@@ -65,11 +72,7 @@ export const Footer = () => {
             </div>
             <textarea
               name="mensaje"
-              placeholder="hola humano,
-
-  además, contamos con alianzas estratégicas que nos permiten tener acceso global en la emisión de contratos locales en cada país donde nuestros clientes tengan presencia; pudiendo así brindar un servicio global adaptado a la internacionalización de nuestros clientes.
-  
-  gracias!"
+              placeholder={t("form.body")}
               value={formData.mensaje}
               onChange={handleChange}
               className="w-[90%] lg:w-full lg:h-[135px] h-[191px] text-subtitle bg-[#012237] lg:pt-1 border-sky-950 border px-2 textarea-no-scrollbar"
@@ -79,14 +82,14 @@ export const Footer = () => {
                 type="submit"
                 className="text-black px-5 text-[14px] font-semibold py-2 bg-subtitle"
               >
-                Enviar
+                {t("footer.footer_btn")}
               </button>
             </div>
           </form>
         </article>
         <article className="lg:order-1 lg:w-1/2 flex flex-col items-center lg:items-start lg:text-left">
           <h3 className="text-golden text-[15px] font-bold py-9 hidden lg:block">
-            Dejá tu consulta, te responderemos a la brevedad
+            {t("footer.footer_body")}
           </h3>
           <div className="flex flex-row justify-center lg:justify-start items-center gap-2 mt-3">
             <img src="/mail.svg" alt="e-mail" />

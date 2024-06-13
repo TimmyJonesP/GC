@@ -1,4 +1,5 @@
 {
+  "btn": "Más info",
   "nav": {
     "home": "Home",
     "credit": "Seguros de Crédito",
@@ -8,7 +9,8 @@
   },
   "footer": {
     "footer": "Contáctanos",
-    "footer_body": "Déjanos tu consulta y te responderemos en la brevedad"
+    "footer_body": "Déjanos tu consulta y te responderemos en la brevedad",
+    "footer_btn": "Enviar"
   },
   "home": {
     "hero": "Somos su socio estratégico en la gestión de seguros especializados y soluciones financieras",
@@ -21,19 +23,19 @@
   },
   "solutions": [
     {
-      "icon": "remp-icons.svg",
+      "icon": "credit-img.svg",
       "title": "Seguros de Crédito",
       "description": "Operamos con aseguradoras de primer nivel mundial y contamos con alianzas estratégicas que nos permiten emitir contratos locales en cada país donde nuestros clientes tengan presencia, logrando así brindarles un servicio global adaptado a su internacionalización.",
       "link": "/credit"
     },
     {
-      "icon": "remp-icons.svg",
+      "icon": "finance-img.svg",
       "title": "Financiamiento",
       "description": "Trabajamos con Bancos y Fintechs líderes del mercado para ayudarlo en la obtención de financiamiento y permitirle acceder al capital de trabajo, asesorándolo para elegir aquellas herramientas que le permitirán que su negocio prospere.",
       "link": "/financing"
     },
     {
-      "icon": "remp-icons.svg",
+      "icon": "service-img.svg",
       "title": "Otros Servicios",
       "description": "Contamos con una red de partners que nos posibilita brindar soluciones adicionales como asesoría en fusiones/adquisiciones, reestructuración empresarial, levantamiento de fondos y desarrollo de estrategias corporativas, como así también la administración/colocación de inversiones.",
       "link": "/services"
@@ -42,17 +44,18 @@
   "credit": {
     "pre": "Nuestros",
     "title": "Seguros de Crédito",
-    "sub": "Los Seguros de Crédito son instrumentos financieros cuya finalidad es <b>proteger a las compañías frente al riesgo de impago</b> de las cuentas por cobrar con sus clientes, ya sea en el mercado nacional como el internacional, y a causa de una insolvencia declarada (quiebra o concurso mercantil) o por una simple mora prolongada.",
+    "sub": "Los Seguros de Crédito son instrumentos financieros cuya finalidad es proteger a las compañías frente al riesgo de impago de las cuentas por cobrar con sus clientes, ya sea en el mercado nacional como el internacional, y a causa de una insolvencia declarada (quiebra o concurso mercantil) o por una simple mora prolongada.",
     "sub2": "En GA trabajamos en conjunto con las aseguradoras para garantizarles a nuestros clientes una gestión óptima de sus cuentas por cobrar, protegiéndolos para que no deban preocuparse por sus deudores, evitándoles procesos legales extensos con altos costos y asegurándoles que su flujo de caja y capital de trabajo jamás se verán afectados por un impago. Además, nuestra red de alianzas estratégicas nos permite tener acceso global en la emisión de contratos locales en cada país donde nuestros clientes tengan presencia, por lo que podemos brindarles un servicio global adaptado a su internacionalización.",
     "ope": "¿Cómo operamos?",
     "elements": [
       {
-        "body": "Ante impagos por <b>mora prolongada</b> nos encargaremos de recuperar la deuda en representación de usted, y en caso de no poder hacerlo, se le indemnizará por el importe adeudado."
+        "body": "Ante impagos por mora prolongada nos encargaremos de recuperar la deuda en representación de usted, y en caso de no poder hacerlo, se le indemnizará por el importe adeudado."
       },
       {
-        "body": "Mientras tanto, si se trata de una <b>insolvencia declarada</b>, como una quiebra o un concurso mercantil, recibirá la indemnización de su deuda en los 30 días siguientes a informar la misma. Luego, nosotros nos encargaremos junto con la aseguradora de seguir con el proceso de concurso o proceso judicial en representación de usted."
+        "body": "Mientras tanto, si se trata de una insolvencia declarada, como una quiebra o un concurso mercantil, recibirá la indemnización de su deuda en los 30 días siguientes a informar la misma. Luego, nosotros nos encargaremos junto con la aseguradora de seguir con el proceso de concurso o proceso judicial en representación de usted."
       }
     ],
+    "dest": "Entre los beneficios se destacan que:",
     "bene": [
       {
         "body": "Garantiza el pago de sus clientes y por ende el flujo de ingresos."
@@ -92,7 +95,7 @@
       }
     ]
   },
-  "white": "Dentro de los productos Seguros de Crédito y Protección de Cuentas por Cobrar operamos con aseguradoras de primer nivel mundial:",
+  "white": "Instituciones financieras que nos respaldan:",
   "financing": {
     "pre": "Nuestro",
     "title": "Financiamiento",
@@ -144,7 +147,8 @@
     "foot": "Todos estos servicios de Optimización Financiera Estratégica están diseñados para proporcionar una visión integral de sus finanzas, permitiéndole maximizar sus recursos y lograr un crecimiento sostenible, y en GA los llevamos a cabo trabajando con entidades financieras de primer nivel:"
   },
   "services": {
-    "title": "Contamos con una red de partners estratégicos que nos posibilita brindar soluciones adicionales para nuestros clientes. Algunas de ellas son:",
+    "title": "Otros servicios",
+    "sub": "Contamos con una red de partners estratégicos que nos posibilita brindar soluciones adicionales para nuestros clientes. Algunas de ellas son:",
     "elements": [
       {
         "body": "Asesoría en Fusiones y Adquisiciones (M&A)"
@@ -154,15 +158,18 @@
       },
       {
         "body": "Levantamiento de fondos y desarrollo de estrategias corporativas"
-      },
-      {
-        "body": "Administración y colocación de inversiones"
       }
     ],
-    "sub": {
-      "p1": "En temas relacionados a <b>asesoría en fusiones y adquisiciones (M&A), reestructuración empresarial, levantamiento de fondos y desarrollo de estrategias corporativas</b> tenemos un partnership con",
+    "sub1": {
+      "p1": "En temas relacionados a asesoría en fusiones y adquisiciones (M&A), reestructuración empresarial, levantamiento de fondos y desarrollo de estrategias corporativas tenemos un partnership con",
       "p2": "un despacho de banca privada líder en México con más de 20 años de experiencia y una red de expertos de alto calibre, especializados en consultoría estratégica en Banca de Inversión y Finanzas Corporativas."
     },
-    "end": "En el segmento de <b>administración y colocación de inversiones<b/> operamos con diferentes fondos, traders y operadores de real estate lo cual nos permite ofrecer una variedad de oportunidades de inversión únicas a nuestros clientes."
+    "end": "En el segmento de administración y colocación de inversiones operamos con diferentes fondos, traders y operadores de real estate lo cual nos permite ofrecer una variedad de oportunidades de inversión únicas a nuestros clientes."
+  },
+  "form": {
+    "name": "Nombre",
+    "email": "Email",
+    "tel": "Número Telefónico",
+    "body": "Escriba su mensaje."
   }
 }

@@ -1,16 +1,32 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { routes } from "../../routerConfig";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import i18n from "../../i18n";
 
 export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [initialTop, setInitialTop] = useState<number | null>(null);
+
+  const navbarRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 0);
+      if (navbarRef.current) {
+        const navbarTop = navbarRef.current.getBoundingClientRect().top;
+
+        if (initialTop === null) {
+          setInitialTop(navbarTop);
+        }
+
+        if (window.scrollY > (initialTop ?? 0)) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      }
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -18,11 +34,13 @@ export const NavBar = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [initialTop]);
 
   const location = useLocation();
   const { t } = useTranslation();
-
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -52,15 +70,18 @@ export const NavBar = () => {
       className={`w-full z-50 h-[420px] lg:h-[205px] bg-[#012237] items-center justify-center flex flex-col lg:flex-row lg:justify-between`}
     >
       <div
-        className={`w-screen flex flex-row items-center justify-between px-16 fixed lg:flex-row bg-[#012237] lg:px-24 py-5 transition-all duration-20 z-50 ${
-          isScrolled || isMenuOpen ? "top-0" : ""
+        className={`w-full flex flex-row items-center justify-between px-6 lg:flex-row bg-[#012237] xl:px-24 py-5 z-50 ${
+          isScrolled || isMenuOpen ? "fixed top-0" : ""
         } ${isMenuOpen ? "h-screen flex-col" : ""}`}
       >
-        <div className="flex flex-row items-center justify-between w-full lg:w-auto">
+        <div
+          className="flex flex-row items-center justify-between w-full lg:w-auto transition-all duration-300 ease-in-out"
+          ref={navbarRef}
+        >
           <Link to="/" onClick={handleLinkClick}>
             <img src="/garisk-logo.svg" alt="Garisk Capital's logo" />
           </Link>
-          <div className="lg:hidden">
+          <div className="lg:hidden ">
             <button className="text-white" onClick={toggleMenu}>
               <img
                 src="/hamburger.svg"
@@ -103,9 +124,25 @@ export const NavBar = () => {
               </Link>
             </li>
           ))}
+          <div className=" lg:hidden px-[50px] pt-[55px]">
+            <button onClick={() => changeLanguage("en")}>
+              <img src="en-btn.png" className="px-4" alt="" />
+            </button>
+            <button onClick={() => changeLanguage("es")}>
+              <img src="es-btn.png" alt="" />
+            </button>
+          </div>
         </ul>
+        <div className="hidden lg:block absolute right-[140px] xl:right-[260px]">
+          <button onClick={() => changeLanguage("en")}>
+            <img src="en-btn.png" className="px-4" alt="english" />
+          </button>
+          <button onClick={() => changeLanguage("es")}>
+            <img src="es-btn.png" alt="spanish" />
+          </button>
+        </div>
         <div className="hidden lg:block">
-          <button className="text-golden gradiente-gold bg-transparent text-[14px] font-semibold border-2 text-center border-golden px-6 justify-center py-1 drop-shadow-sm shadow-white">
+          <button className="text-golden gradiente-gold bg-transparent xl:ml-[125px] text-[14px] font-semibold border-2 text-center border-golden px-6 justify-center py-1 drop-shadow-sm shadow-white">
             {t("nav.contact")}
           </button>
         </div>

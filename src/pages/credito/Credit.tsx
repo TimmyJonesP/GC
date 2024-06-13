@@ -1,74 +1,41 @@
-import { useEffect, useState } from "react";
 import Enterprises from "../../components/reut/enterprises";
 import Hero from "../../components/Hero/Hero";
+import { useTranslation } from "react-i18next";
 
 interface Operation {
   body: string;
 }
 
 const Credit = () => {
-  const [operations, setOperations] = useState<Operation[]>([]);
-  const [benefits, setBenefits] = useState<Operation[]>([]);
-
-  useEffect(() => {
-    fetch("operations.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setOperations(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
-  useEffect(() => {
-    fetch("beneficios.json")
-      .then((res) => res.json())
-      .then((data) => {
-        setBenefits(data);
-      })
-      .catch((err) => console.log(err));
-  }, []);
-
+  const { t } = useTranslation();
+  const operations: Operation[] = t("credit.elements", { returnObjects: true });
+  const benefits: Operation[] = t("credit.bene", { returnObjects: true });
   return (
     <main>
       <Hero />
-      <section className="flex flex-col items-center justify-center h-full w-full xl:px-96 my-28">
-        <p className="uppercase font-light text-[19px] text-white leading-[0.7]">
-          Nuestros
-        </p>
+      <section className="flex flex-col items-center justify-center h-full w-full  my-16 max-w-screen-lg m-auto ">
         <h1 className="uppercase font-bold text-[31px] text-subtitle text-center">
-          seguros de crédito
+          {t("credit.title")}
         </h1>
         <h3 className="text-golden text-[15px] font-semibold text-center px-7 mx-6 pt-7">
-          Los Seguros de Crédito son instrumentos financieros cuya finalidad es
-          proteger a las compañías frente al riesgo de impago de las cuentas por
-          cobrar con sus clientes, ya sea en el mercado nacional como el
-          internacional, y a causa de una insolvencia declarada (quiebra o
-          concurso mercantil) o por una simple mora prolongada.
+          {t("credit.sub")}
         </h3>
         <h4 className="text-golden font-light text-[12px] px-7 mx-5 pt-7 text-center">
-          En GA trabajamos en conjunto con las aseguradoras para garantizarles a
-          nuestros clientes una gestión óptima de sus cuentas por cobrar,
-          protegiéndolos para que no deban preocuparse por sus deudores,
-          evitándoles procesos legales extensos con altos costos y asegurándoles
-          que su flujo de caja y capital de trabajo jamás se verán afectados por
-          un impago. Además, nuestra red de alianzas estratégicas nos permite
-          tener acceso global en la emisión de contratos locales en cada país
-          donde nuestros clientes tengan presencia, por lo que podemos
-          brindarles un servicio global adaptado a su internacionalización.
+          {t("credit.sub2")}
         </h4>
       </section>
-      <section className="w-full h-full flex flex-col items-center justify-center">
+      <section className="w-full h-full flex flex-col items-center justify-center max-w-screen-lg m-auto">
         <h2 className="uppercase text-subtitle font-bold text-[20px] text-center">
-          ¿Cómo operamos?
+          {t("credit.ope")}
         </h2>
-        <article className="aligns-center justify-evenly flex flex-row flex-wrap mb-16">
+        <article className="align-center justify-center flex flex-row flex-wrap my-28 gap-8 lg:gap-36">
           {operations.map((element, index) => (
             <div
               key={index}
-              className="flex flex-col items-center align-middle justify-evenly h-[170px] w-[251px] mt-7"
+              className="flex flex-col items-center align-middle justify-evenly h-[200px] w-[251px]"
             >
               <img src="/divisorCred.svg" alt="divisor" className="" />
-              <p className="text-center text-xs font-light text-white px-4 my-auto">
+              <p className="text-center text-[12px] font-light text-white px-4 my-auto">
                 {element.body}
               </p>
               <img
@@ -83,23 +50,25 @@ const Credit = () => {
       <section>
         <Enterprises />
       </section>
-      <section className="w-full h-full flex flex-col items-center justify-center bg-[#001420] pt-12 relative">
-        <div className="rombo" />
-        <h2 className="uppercase text-subtitle font-bold text-[20px] text-center">
-          entre los beneficios se destacan que:
-        </h2>
-        <article className="aligns-center justify-evenly flex flex-col flex-no-wrap mb-7">
-          {benefits.map((benefit, index) => (
-            <div
-              key={index}
-              className="flex flex-col items-center align-center justify-center h-[66px] w-[215px] m-7"
-            >
-              <img src="golden.svg" alt="" className="mb-4" />
-              <p className="text-center text-xs font-light text-white px-4 m-auto">
-                {benefit.body}
-              </p>
-            </div>
-          ))}
+      <section className="bg-[#001420]">
+        <article className="w-full h-full flex flex-col items-center justify-center relative max-w-screen-lg m-auto ">
+          <div className="rombo" />
+          <h2 className="uppercase text-subtitle font-bold text-[20px] py-12 text-center">
+            {t("credit.dest")}
+          </h2>
+          <article className="align-center justify-evenly flex flex-col flex-no-wrap mb-7 md:grid md:grid-cols-2 md:gap-8 lg:grid  lg:grid-cols-4 gap-8 max-w-screen-lg m-auto pb-28">
+            {benefits.map((benefit, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center align-center h-[100px] w-[215px] m-7 lg:m-0"
+              >
+                <img src="golden.svg" alt="" className="mb-4" />
+                <p className="text-center text-[12px] font-light text-white px-4">
+                  {benefit.body}
+                </p>
+              </div>
+            ))}
+          </article>
         </article>
       </section>
     </main>
