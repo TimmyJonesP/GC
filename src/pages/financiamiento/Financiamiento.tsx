@@ -107,11 +107,11 @@ const Financiamiento = () => {
           </p>
           <img
             src="/fin-H.png"
-            className="hidden lg:block h-[85px] w-[986px] max-h-max mb-[90px]"
+            className="hidden lg:block h-[85px] w-[986px] max-h-max mb-[90px] mr-[30px]"
             alt=""
           />
           <div className="flex flex-col justify-center items-center lg:flex-row lg:relative">
-            <p className="text-center font-semibold text-[12px] py-[15px] lg:absolute lg:right-[156px] lg:bottom-[30px] lg:w-[200px] lg:order-2">
+            <p className="text-center font-semibold text-[12px] py-[15px] lg:absolute lg:right-[165px] lg:bottom-[30px] lg:w-[200px] lg:order-2">
               {t("white2p")}
             </p>
             <img
@@ -119,7 +119,7 @@ const Financiamiento = () => {
               alt=""
               className="lg:hidden h-[207px] w-[279px] mr-10"
             />
-            <p className="text-center  font-semibold text-[12px] py-[17px] lg:absolute lg:left-[260px] lg:bottom-[30px] contain-content lg:order-1">
+            <p className="text-center  font-semibold text-[12px] py-[17px] lg:absolute lg:left-[249px] lg:bottom-[30px] contain-content lg:order-1">
               {t("white2pp")}
             </p>
             <img
