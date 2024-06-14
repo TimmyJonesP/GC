@@ -1,10 +1,11 @@
-import { FormEvent, useRef } from "react";
+import { FormEvent, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import emailjs from "@emailjs/browser";
 
 export const Footer = () => {
   const { t } = useTranslation();
   const form = useRef<HTMLFormElement>(null);
+  const [message, setMessage] = useState<string | null>(null);
   const footerRef = useRef(null);
 
   const sendEmail = (e: FormEvent) => {
@@ -12,15 +13,21 @@ export const Footer = () => {
 
     if (form.current) {
       emailjs
-        .sendForm("service_j6w1y3z", "template_bh320rq", form.current, {
-          publicKey: "hv16itZ0B6boTfvVo",
-        })
+        .sendForm(
+          "service_j6w1y3z",
+          "template_bh320rq",
+          form.current,
+          "hv16itZ0B6boTfvVo"
+        )
         .then(
           () => {
             console.log("SUCCESS!");
+            setMessage("Email sent successfully!");
+            form.current!.reset();
           },
           (error) => {
             console.log("FAILED...", error.text, error);
+            setMessage("Failed to send email. Please try again.");
           }
         );
     }
@@ -104,6 +111,7 @@ export const Footer = () => {
           </div>
         </article>
       </section>
+      {message && <p className="text-white mt-4">{message}</p>}
     </footer>
   );
 };
