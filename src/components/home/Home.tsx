@@ -20,16 +20,20 @@ const Home = () => {
 
       const footerPosition = footer.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
-
-      // Ocultar el botón cuando el footer está a punto de entrar en la pantalla
-      if (footerPosition < windowHeight) {
-        scrollButton.classList.add("hidden");
+      const isLargeScreen = window.innerWidth >= 1024;
+      if (isLargeScreen) {
+        if (footerPosition < windowHeight) {
+          scrollButton.classList.add("hidden");
+        } else {
+          scrollButton.classList.remove("hidden");
+        }
       } else {
-        scrollButton.classList.remove("hidden");
+        scrollButton.classList.add("hidden");
       }
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -40,7 +44,7 @@ const Home = () => {
       <img
         src="/scroll.png"
         alt=""
-        className={`hidden lg:fixed bottom-0 z-20 left-1/2 transform -translate-x-1/2 h-[50px] w-[50px] `}
+        className="hidden lg:fixed z-20 left-1/2 bottom-[20px] h-[50px] w-[50px]"
         id="scroll"
       />
       <header className="home h-full w-full bg-[#012237] relative flex items-center justify-center">
