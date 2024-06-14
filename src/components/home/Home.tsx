@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 
@@ -7,13 +8,41 @@ interface Elemento {
   description: string;
   link: string;
 }
-
 const Home = () => {
   const { t } = useTranslation();
   const elementos: Elemento[] = t("solutions", { returnObjects: true });
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.getElementById("footer");
+      const scrollButton = document.getElementById("scroll");
 
+      if (!footer || !scrollButton) return;
+
+      const footerPosition = footer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+
+      // Ocultar el botón cuando el footer está a punto de entrar en la pantalla
+      if (footerPosition < windowHeight) {
+        scrollButton.classList.add("hidden");
+      } else {
+        scrollButton.classList.remove("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <main className="overflow-hidden">
+      <img
+        src="/scroll.png"
+        alt=""
+        className={`fixed bottom-0 z-20 left-1/2 transform -translate-x-1/2 h-[50px] w-[50px] `}
+        id="scroll"
+      />
       <header className="home h-full w-full bg-[#012237] relative flex items-center justify-center">
         <img
           src="/desktop-h.png"
