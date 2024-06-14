@@ -1,4 +1,3 @@
-import Enterprises from "../../components/reut/enterprises";
 import Hero from "../../components/Hero/Hero";
 import { useTranslation } from "react-i18next";
 
@@ -57,7 +56,22 @@ const Credit = () => {
         </article>
       </section>
       <section>
-        <Enterprises text={t("white")} />
+        <article className=" w-full bg-white items-center justify-center flex flex-col relative">
+          <div className="rombo bg-ultrablue" />
+          <p className="text-[12px] text-[#012237] font-semibold my-[80px] mx-[20px] text-center">
+            {t("white")}
+          </p>
+          <img
+            src="./logosV.webp"
+            alt="Companies that trust in us"
+            className="mb-[80px] h-[484px] w-[331px] lg:hidden"
+          />
+          <img
+            src="/logosH.webp"
+            className="hidden lg:block h-[81px] w-[1017px] max-h-max mb-[80px]"
+            alt=""
+          />
+        </article>
       </section>
       <section className="bg-[#001420]">
         <article className="w-full h-full flex flex-col items-center justify-center relative max-w-screen-lg m-auto ">

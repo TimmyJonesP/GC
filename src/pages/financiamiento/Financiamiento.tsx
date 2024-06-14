@@ -1,6 +1,5 @@
 import { useTranslation } from "react-i18next";
 import Hero from "../../components/Hero/Hero";
-import Enterprises from "../../components/reut/enterprises";
 interface TranslationElement {
   title: string;
   subtitle?: string;
@@ -101,7 +100,35 @@ const Financiamiento = () => {
         </article>
       </section>
       <section>
-        <Enterprises text={t("white2")} />
+        <article className=" w-full bg-white items-center justify-center flex flex-col relative">
+          <div className="rombo bg-ultrablue" />
+          <p className="text-[12px] text-[#012237] font-semibold my-[40px] mx-[20px] text-center">
+            {t("white2")}
+          </p>
+          <img
+            src="/fin-H.png"
+            className="hidden lg:block h-[85px] w-[986px] max-h-max mb-[90px]"
+            alt=""
+          />
+          <div className="flex flex-col justify-center items-center lg:flex-row lg:relative">
+            <p className="text-center font-semibold text-[12px] py-[15px] lg:absolute lg:right-[156px] lg:bottom-[30px] lg:w-[200px] lg:order-2">
+              {t("white2p")}
+            </p>
+            <img
+              src="tradi-v.png"
+              alt=""
+              className="lg:hidden h-[207px] w-[279px] mr-10"
+            />
+            <p className="text-center  font-semibold text-[12px] py-[17px] lg:absolute lg:left-[260px] lg:bottom-[30px] contain-content lg:order-1">
+              {t("white2pp")}
+            </p>
+            <img
+              src="fin-v.png"
+              alt=""
+              className="lg:hidden h-[217px] w-[251px] mb-[40px] justify-center"
+            />
+          </div>
+        </article>
       </section>
     </main>
   );
