@@ -24,8 +24,10 @@ const Financiamiento = () => {
         <h1 className="uppercase font-bold text-[31px] text-subtitle text-center">
           {t("financing.title")}
         </h1>
-        <h3 className="text-golden text-[15px] font-semibold text-center px-7 mx-6 pt-7">
-          {t("financing.sub")}
+        <h3 className="text-golden text-[15px] font-regular text-center px-7 mx-6 pt-7">
+          {t("credit.sub")}
+          <span className="font-bold ">{t("credit.subN")} </span>
+          {t("credit.subb")}
         </h3>
         <h4 className="text-golden font-light text-[12px] px-7 mx-5 pt-7 text-center">
           {t("financing.sub2")}
@@ -99,7 +101,7 @@ const Financiamiento = () => {
         </article>
       </section>
       <section>
-        <Enterprises />
+        <Enterprises text={t("white2")} />
       </section>
     </main>
   );

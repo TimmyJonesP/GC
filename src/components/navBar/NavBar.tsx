@@ -97,14 +97,12 @@ export const NavBar = () => {
       className={`w-full z-50 h-[200px] bg-[#012237] items-center justify-center flex flex-col lg:flex-row lg:justify-between`}
     >
       <div
+        ref={navbarRef}
         className={`w-full flex flex-row items-center justify-between px-6 lg:flex-row bg-[#012237] xl:px-24 py-3 z-50 ${
-          isScrolled || isMenuOpen ? "fixed top-0" : "block"
+          isScrolled || isMenuOpen ? "fixed top-0" : "relative"
         } ${isMenuOpen ? "h-screen flex-col" : ""}`}
       >
-        <div
-          className="flex flex-row items-center justify-between w-full lg:w-auto transition-all duration-300 ease-in-out"
-          ref={navbarRef}
-        >
+        <div className="flex flex-row items-center justify-between w-full lg:w-auto transition-all duration-300 ease-in-out">
           <Link to="/" onClick={handleLinkClick}>
             <img src="/garisk-logo.svg" alt="Garisk Capital's logo" />
           </Link>
@@ -178,11 +176,11 @@ export const NavBar = () => {
           </div>
         </ul>
         <div className="hidden lg:block absolute right-[140px] xl:right-[240px] top-[30px]">
-          <button onClick={() => changeLanguage("en")}>
-            <img src="en-btn.png" className="px-4" alt="english" />
-          </button>
           <button onClick={() => changeLanguage("es")}>
             <img src="es-btn.png" alt="spanish" />
+          </button>
+          <button onClick={() => changeLanguage("en")}>
+            <img src="en-btn.png" className="px-4" alt="english" />
           </button>
         </div>
         <div className="hidden lg:block">

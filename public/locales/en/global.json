@@ -32,7 +32,7 @@
     {
       "icon": "finance-img.svg",
       "title": "Financing",
-      "description": "We work with market-leading Banks and Fintechs to help you obtain financing and allow",
+      "description": "We work with market-leading Banks and Fintechs to help you obtain financing and allow you to access working capital, advising you to choose those tools that will allow your business to prosper.",
       "link": "/financing"
     },
     {
@@ -45,15 +45,22 @@
   "credit": {
     "pre": "Our",
     "title": "Trade Credit Insurance",
-    "sub": "Trade Credit Insurance is a financial instrument whose purpose is to protect companies against the risk of non-payment of accounts receivable from their customers, both in the domestic and in the international market, and whether due to declared insolvency (bankruptcy or insolvency proceedings) or simply prolonged delay.",
-    "sub2": "At GA, we work together with insurers to guarantee optimal management of our client’s accounts receivable. We ensure them that they do not have to worry about their debtors, avoiding extensive legal proceedings with high costs, and assuring them that their cash flow and working capital will never be affected by a default.In addition, our network of strategic alliances allows us to have global access to the issuance of local contracts in each country where our clients have a presence, so we can provide them with a global service adapted to their internationalization.",
+    "sub": "Trade Credit Insurance is a financial instrument whose purpose is to ",
+    "subN": "protect companies against the risk of non-payment ",
+    "subb": "of accounts receivable from their customers, both in the domestic and in the international market, and whether due to declared insolvency (bankruptcy or insolvency proceedings) or simply prolonged delay.",
+    "sub2": "At GA, we work together with insurers to guarantee optimal management of our client’s accounts receivable. We ensure them that they do not have to worry about their debtors, avoiding extensive legal proceedings with high costs, and assuring them that their cash flow and working capital will never be affected by a default.",
+    "sub3": "In addition, our network of strategic alliances allows us to have global access to the issuance of local contracts in each country where our clients have a presence, so we can provide them with a global service adapted to their internationalization.",
     "ope": "How do we operate?",
     "elements": [
       {
-        "body": "In the event of non-payment due to prolonged delay, we will take care of recovering the debt on your behalf, and if we are unable to do so, you will be compensated for the amount owed."
+        "body": "In the event of ",
+        "bodyn": "non-payment due to prolonged delay",
+        "body2": ", we will take care of recovering the debt on your behalf, and if we are unable to do so, you will be compensated for the amount owed."
       },
       {
-        "body": "Meanwhile, in the event of declared insolvency, such as bankruptcy or commercial bankruptcy, you will receive compensation for your debt within 30 days of reporting it. Then, we will be in charge, together with the insurer, of continuing with the bankruptcy process or judicial process on your behalf."
+        "body": "Meanwhile, in the event of ",
+        "bodyn": "declared insolvency",
+        "body2": ", such as bankruptcy or commercial bankruptcy, you will receive compensation for your debt within 30 days of reporting it. Then, we will be in charge, together with the insurer, of continuing with the bankruptcy process or judicial process on your behalf."
       }
     ],
     "dest": "Benefits include:",
@@ -97,10 +104,13 @@
     ]
   },
   "white": "Within the Trade Credit Insurance and Accounts Receivable Protection products, we operate with world-class insurers:",
+  "white2": "Financial institutions that support us",
   "financing": {
     "pre": "Our",
     "title": "Financing",
-    "sub": "At GA, we understand that every company faces unique financial management challenges. That's why we offer each client a range of financial products designed to meet the specific needs of your business.",
+    "sub": "At GA, we understand that every company faces ",
+    "subN": "unique financial management challenges",
+    "subb": ". That's why we offer each client a range of financial products designed to meet the specific needs of your business.",
     "sub2": "In addition, we are committed to being your strategic partner every step of the way, helping you make informed financial decisions and providing you with the tools you need to help your business thrive.",
     "ope": "Financial products available",
     "elements": [
@@ -157,11 +167,13 @@
         "body": "Corporate restructuring"
       },
       {
-        "body": "Fundraising and development of corporate strategies."
+        "body": "Fundraising and development of corporate strategies"
       }
     ],
     "sub1": {
-      "p1": "In matters related to mergers and acquisitions (M&A) advisory, corporate restructuring, fundraising, and corporate strategy development we have a partnership with ",
+      "p1": "In matters related to ",
+      "pn": "mergers and acquisitions (M&A) advisory, corporate restructuring, fundraising, and corporate strategy development",
+      "pe": " we have a partnership with ",
       "p2": "a leading private banking firm in Mexico with more than 20 years of experience and a network of high-caliber experts, specialized in strategic consulting in Investment Banking and Corporate Finance."
     },
     "end": "In the investment management and placement segment we operate with different funds, traders, and real estate operators which allows us to offer a variety of unique investment opportunities to our clients."
@@ -170,6 +182,6 @@
     "name": "Name",
     "email": "Email",
     "tel": "Phone",
-    "body": "Leave a message"
+    "body": "Leave your message"
   }
 }

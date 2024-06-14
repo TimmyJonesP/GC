@@ -36,9 +36,11 @@ const Servicios = () => {
       <section className="w-full bg-white">
         <article className=" items-center justify-center flex flex-col relative max-w-screen-lg m-auto">
           <div className="rombo bg-ultrablue" />
-          <p className="text-[14px] text-[#012237] font-semibold my-[80px] mx-[20px] text-center">
-            {t("services.sub1.p1")}{" "}
-            <a href="https://www.gplatino.com/">
+          <p className="text-[14px] text-[#012237] font-regular my-[80px] mx-[20px] text-center">
+            {t("services.sub1.p1")}
+            <span className="font-bold">{t("services.sub1.pn")}</span>
+            {t("services.sub1.pe")}
+            <a href="https://www.gplatino.com/" target="__blank">
               <b>Grupo Platino </b>
             </a>
             {t("services.sub1.p2")}
