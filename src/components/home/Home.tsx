@@ -44,7 +44,7 @@ const Home = () => {
       <img
         src="/scroll.png"
         alt=""
-        className="hidden lg:fixed z-20 left-1/2 bottom-[20px] h-[50px] w-[50px]"
+        className="hidden lg:fixed z-20 left-[48.5%] bottom-[20px]"
         id="scroll"
       />
       <header className="home h-full w-full bg-[#012237] relative flex items-center justify-center">
