@@ -20,15 +20,10 @@ const Home = () => {
 
       const footerPosition = footer.getBoundingClientRect().top;
       const windowHeight = window.innerHeight;
-      const isLargeScreen = window.innerWidth >= 1024;
-      if (isLargeScreen) {
-        if (footerPosition < windowHeight) {
-          scrollButton.classList.add("hidden");
-        } else {
-          scrollButton.classList.remove("hidden");
-        }
-      } else {
+      if (footerPosition < windowHeight) {
         scrollButton.classList.add("hidden");
+      } else {
+        scrollButton.classList.remove("hidden");
       }
     };
 
@@ -44,7 +39,7 @@ const Home = () => {
       <img
         src="/scroll.png"
         alt=""
-        className="hidden lg:fixed z-20 left-[48.5%] bottom-[20px]"
+        className="fixed z-20 right-[10%] md:left-[48.7%] bottom-[20px]"
         id="scroll"
       />
       <header className="home h-full w-full bg-[#012237] relative flex items-center justify-center">
@@ -58,7 +53,7 @@ const Home = () => {
           alt="Home image"
           className="home-mobil object-cover h-full w-full max-w-max md:hidden"
         />
-        <h1 className="text-golden uppercase absolute px-14 text-[19px] z-10 font-bold text-center  bottom-[-75px] md:bottom-0 lg:text-[29px] mx-auto max-w-screen-lg">
+        <h1 className="text-golden uppercase absolute px-14 text-[19px] z-10 font-bold text-center  bottom-[-75px] md:bottom-[25px] xl:bottom-[100px] lg:text-[29px] mx-auto max-w-screen-lg">
           {t("home.hero")}
         </h1>
         <div className="gradiente w-full absolute bottom-0 md:bottom-0 h-[100px] rotate-180" />

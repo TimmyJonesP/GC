@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import Hero from "../../components/Hero/Hero";
+import { useEffect } from "react";
 interface TranslationElement {
   title: string;
   subtitle?: string;
@@ -15,9 +16,38 @@ const Financiamiento = () => {
   const opt: TranslationElement[] = t("financing.opt", {
     returnObjects: true,
   });
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.getElementById("footer");
+      const scrollButton = document.getElementById("scroll");
+
+      if (!footer || !scrollButton) return;
+
+      const footerPosition = footer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (footerPosition < windowHeight) {
+        scrollButton.classList.add("hidden");
+      } else {
+        scrollButton.classList.remove("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <main className="">
+      <img
+        src="/scroll.png"
+        alt=""
+        className="fixed z-20 right-[10%] md:left-[48.7%] bottom-[20px]"
+        id="scroll"
+      />
       <Hero />
       <section className="flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto my-16">
         <h1 className="uppercase font-bold text-[31px] text-subtitle text-center">

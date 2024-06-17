@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Hero from "../../components/Hero/Hero";
 import { useTranslation } from "react-i18next";
 
@@ -11,9 +12,38 @@ const Credit = () => {
   const { t } = useTranslation();
   const operations: Operation[] = t("credit.elements", { returnObjects: true });
   const benefits: Operation[] = t("credit.bene", { returnObjects: true });
+  useEffect(() => {
+    const handleScroll = () => {
+      const footer = document.getElementById("footer");
+      const scrollButton = document.getElementById("scroll");
+
+      if (!footer || !scrollButton) return;
+
+      const footerPosition = footer.getBoundingClientRect().top;
+      const windowHeight = window.innerHeight;
+      if (footerPosition < windowHeight) {
+        scrollButton.classList.add("hidden");
+      } else {
+        scrollButton.classList.remove("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <main>
       <Hero />
+      <img
+        src="/scroll.png"
+        alt=""
+        className="fixed z-20 right-[10%] md:left-[48.7%] bottom-[20px]"
+        id="scroll"
+      />
       <section className="flex flex-col items-center justify-center h-full w-full  my-16 max-w-screen-lg m-auto ">
         <h1 className="uppercase font-bold text-[31px] text-subtitle text-center">
           {t("credit.title")}
