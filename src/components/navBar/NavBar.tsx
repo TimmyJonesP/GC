@@ -94,11 +94,11 @@ export const NavBar = () => {
 
   return (
     <nav
-      className={`w-full z-50 h-[200px] bg-[#012237] items-center justify-center flex flex-col lg:flex-row lg:justify-between`}
+      className={`w-full z-50 h-[200px] lg:h-[90px] bg-[#012237] items-center justify-center flex flex-col lg:flex-row lg:justify-between`}
     >
       <div
         ref={navbarRef}
-        className={`w-full flex flex-row items-center justify-between px-6 lg:flex-row bg-[#012237] xl:px-24 py-3 z-50 ${
+        className={`w-full flex flex-row items-center lg:pt-4 justify-between pb-4 lg:flex-row bg-[#012237] xl:px-24 py-3 z-50 ${
           isScrolled || isMenuOpen ? "fixed top-0" : "relative"
         } ${isMenuOpen ? "h-screen flex-col" : ""}`}
       >
