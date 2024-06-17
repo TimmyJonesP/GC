@@ -17,7 +17,7 @@ const Hero: React.FC<HeroProps> = ({ text }) => {
         alt="Home image"
         className="object-cover h-full w-full max-w-max md:hidden"
       />
-      <h1 className="text-subtitle uppercase absolute px-0 z-10 font-bold text-center bottom-6 xl:bottom-[70px] text-[31px] xl:text-[40px] mx-auto max-w-screen-lg">
+      <h1 className="text-subtitle uppercase absolute px-0 z-10 font-bold text-center bottom-6 xl:bottom-[70px] text-[31px] lg:text-[40px] mx-auto max-w-screen-lg">
         {text}
       </h1>
       <div className="gradiente w-full absolute bottom-0 h-[100px] rotate-180" />

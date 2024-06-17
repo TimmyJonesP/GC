@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { routes } from "../../routerConfig";
 import { useEffect } from "react";
@@ -129,7 +129,7 @@ export const NavBar = () => {
           }`}
         >
           {routes.map((route, index) => (
-            <>
+            <React.Fragment key={route.path}>
               <li
                 key={route.path}
                 className={`${
@@ -164,7 +164,7 @@ export const NavBar = () => {
                   </button>
                 </li>
               )}
-            </>
+            </React.Fragment>
           ))}
           <div className=" lg:hidden px-[50px] py-[30px]">
             <button onClick={() => changeLanguage("en")}>
