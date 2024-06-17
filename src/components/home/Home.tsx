@@ -53,7 +53,7 @@ const Home = () => {
           alt="Home image"
           className="home-mobil object-cover h-full w-full max-w-max md:hidden"
         />
-        <h1 className="text-golden uppercase absolute px-14 text-[19px] z-10 font-bold text-center  bottom-[-75px] md:bottom-[25px] xl:bottom-[50px] lg:text-[29px] mx-auto max-w-screen-lg">
+        <h1 className="text-golden uppercase absolute px-14 text-[19px] z-10 font-bold text-center  bottom-[-75px] md:bottom-[25px] xl:bottom-[50px] lg:text-[31px] mx-auto max-w-screen-lg">
           {t("home.hero")}
         </h1>
         <div className="gradiente w-full absolute bottom-0 md:bottom-0 h-[100px] rotate-180" />

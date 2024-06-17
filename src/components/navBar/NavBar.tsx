@@ -98,7 +98,7 @@ export const NavBar = () => {
     >
       <div
         ref={navbarRef}
-        className={`w-full flex flex-row items-center lg:pt-4 justify-between pb-4 lg:flex-row bg-[#012237] xl:px-24 py-3 z-50 ${
+        className={`w-full flex flex-row items-center lg:pt-4 justify-between sm:px-10 pb-4 lg:flex-row bg-[#012237] xl:px-24 py-3 z-50 ${
           isScrolled || isMenuOpen ? "fixed top-0" : "relative"
         } ${isMenuOpen ? "h-screen flex-col" : ""}`}
       >

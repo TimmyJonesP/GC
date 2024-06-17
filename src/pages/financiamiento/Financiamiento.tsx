@@ -48,22 +48,19 @@ const Financiamiento = () => {
         className="fixed z-20 right-[10%] md:left-[48.7%] bottom-[20px]"
         id="scroll"
       />
-      <Hero />
-      <section className="flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto my-16">
-        <h1 className="uppercase font-bold text-[31px] text-subtitle text-center">
-          {t("financing.title")}
-        </h1>
-        <h3 className="text-golden text-[15px] font-regular text-center px-7 mx-6 pt-7">
+      <Hero text={t("financing.title")} />
+      <section className="flex flex-col items-center justify-center h-full w-full max-w-screen-lg m-auto mb-16">
+        <h3 className="text-golden text-[17px] font-regular text-center px-7 mx-6 pt-7">
           {t("credit.sub")}
           <span className="font-bold ">{t("credit.subN")} </span>
           {t("credit.subb")}
         </h3>
-        <h4 className="text-golden font-light text-[12px] px-7 mx-5 pt-7 text-center">
+        <h4 className="text-golden font-light text-[15px] px-7 mx-5 pt-7 text-center">
           {t("financing.sub2")}
         </h4>
       </section>
       <section className="w-full h-full flex flex-col items-center justify-center pt-12 relative">
-        <h2 className="uppercase text-subtitle font-bold text-[20px] text-center">
+        <h2 className="uppercase text-subtitle font-bold text-[23px] text-center">
           {t("financing.ope")}
         </h2>
         <article className="aligns-center justify-evenly flex flex-col flex-no-wrap mb-7 md:grid md:grid-cols-2 md:gap-8 lg:grid lg:grid-cols-4 gap-8 max-w-screen-lg m-auto mt-14">
@@ -74,16 +71,16 @@ const Financiamiento = () => {
             >
               <img src="golden.svg" alt="" className="mb-4" />
               <div className=" h-[48px]">
-                <p className="text-golden font-semibold text-center text-[16px]">
+                <p className="text-golden font-semibold text-center text-[17px]">
                   {element.title}
                 </p>
                 {element.subtitle ? (
-                  <p className="text-center text-[12px] font-light text-golden px-4 leading-[0.8] m-auto">
+                  <p className="text-center text-[17px] font-light text-golden px-4 leading-[0.8] m-auto">
                     {element.subtitle}
                   </p>
                 ) : null}
               </div>
-              <p className="text-center text-[12px] font-light text-white px-4 py-3 m-auto justify-start flex-grow">
+              <p className="text-center text-[15px] font-light text-white px-4 py-3 m-auto justify-start flex-grow">
                 {element.body}
               </p>
             </div>
@@ -93,10 +90,10 @@ const Financiamiento = () => {
       <section className="w-full h-full bg-[#001420]">
         <article className="w-full h-full flex flex-col items-center justify-center py-[76px] relative max-w-screen-lg m-auto">
           <div className="rombo" />
-          <h2 className="uppercase text-subtitle font-bold text-[20px] text-center">
+          <h2 className="uppercase text-subtitle font-bold text-[23px] text-center">
             {t("financing.title2")}
           </h2>
-          <p className="text-golden text-[12px] font-regular text-center px-4 mx-6 pt-7">
+          <p className="text-golden text-[15px] font-regular text-center px-4 mx-6 pt-7">
             {t("financing.sub3")}
             <span className=" font-semibold">{t("financing.span")}</span>
             {t("financing.sub4")}
@@ -109,22 +106,22 @@ const Financiamiento = () => {
               >
                 <img src="golden.svg" alt="" className="mb-4" />
                 <div className="h-[48px]">
-                  <p className="text-golden font-semibold text-center text-[16px]">
+                  <p className="text-golden font-semibold text-center text-[17px]">
                     {element.title}
                   </p>
                   {element.subtitle ? (
-                    <p className="text-center text-[12px] font-light text-golden px-4 leading-[0.8] m-auto">
+                    <p className="text-center text-[15px] font-light text-golden px-4 leading-[0.8] m-auto">
                       {element.subtitle}
                     </p>
                   ) : null}
                 </div>
-                <p className="text-[12px] font-light text-center text-white px-4 py-3 justify-start flex-grow">
+                <p className="text-[15px] font-light text-center text-white px-4 py-3 justify-start flex-grow">
                   {element.body}
                 </p>
               </div>
             ))}
           </article>
-          <p className="text-[12px] font-regular text-center text-subtitle px-7 mx-6 pt-7">
+          <p className="text-[15px] font-regular text-center text-subtitle px-7 mx-6 pt-7">
             {t("financing.foot")}
           </p>
         </article>
@@ -132,7 +129,7 @@ const Financiamiento = () => {
       <section>
         <article className=" w-full bg-white items-center justify-center flex flex-col relative">
           <div className="rombo bg-ultrablue" />
-          <p className="text-[12px] text-[#012237] font-semibold my-[40px] mx-[20px] text-center">
+          <p className="text-[15px] text-[#012237] font-semibold my-[40px] mx-[20px] text-center">
             {t("white2")}
           </p>
           <img
@@ -141,7 +138,7 @@ const Financiamiento = () => {
             alt=""
           />
           <div className="flex flex-col justify-center items-center lg:flex-row lg:relative">
-            <p className="text-center font-semibold text-[12px] py-[15px] lg:absolute lg:right-[165px] lg:bottom-[30px] lg:w-[200px] lg:order-2">
+            <p className="text-center font-semibold text-[15px] py-[15px] lg:absolute lg:right-[165px] lg:bottom-[30px] lg:w-[200px] lg:order-2">
               {t("white2p")}
             </p>
             <img
@@ -149,7 +146,7 @@ const Financiamiento = () => {
               alt=""
               className="lg:hidden h-[207px] w-[279px] mr-10"
             />
-            <p className="text-center  font-semibold text-[12px] py-[17px] lg:absolute lg:left-[249px] lg:bottom-[30px] contain-content lg:order-1">
+            <p className="text-center  font-semibold text-[15px] py-[17px] lg:absolute lg:left-[242px] lg:bottom-[30px] contain-content lg:order-1">
               {t("white2pp")}
             </p>
             <img
