@@ -14,10 +14,10 @@ export const Footer = () => {
     if (form.current) {
       emailjs
         .sendForm(
-          "service_j6w1y3z",
-          "template_bh320rq",
+          "service_t4hbfkq",
+          "template_lkr4tow",
           form.current,
-          "hv16itZ0B6boTfvVo"
+          "p55Twf0434XRIt0bvicC-"
         )
         .then(
           () => {
